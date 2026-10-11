@@ -1,36 +1,48 @@
-# I'm Upping My P(doom) — music video
+# I'm Upping My P(doom) — Arabic Edition 🇸🇦
 
-A generative, code-rendered music video with word-synced karaoke typography. Every frame is a deterministic function of song time, so the live preview in the browser and the offline 1080p60 (or 4K60) export are identical.
+An **Arabic edition** of the generative, code-rendered music video **“I'm Upping My P(doom)”**, based on the original project by **[mexicat](https://github.com/mexicat/pdoom-video)**.
 
-**Watch it in 4K on YouTube:** https://www.youtube.com/watch?v=5EoO5413dBY
+This edition adapts the on-screen lyrics and typography into Arabic while preserving the visual style and time-synchronized motion graphics of the original. It includes Windows rendering scripts for multiple resolutions and frame rates, including **4K / 120 FPS**.
 
-The YouTube upload is a slightly outdated render. For the latest and best-quality version, render it locally (see [Render the video](#render-the-video)).
+## Watch the Arabic Edition
 
-The video was made with Claude (Opus 5.5) in Claude Code: the concept and treatment, the lyric alignment and audio analysis, the renderer, every scene and the renders were all worked out in conversation with Claude.
+**[Watch the Arabic Edition on YouTube](https://youtu.be/PMNwbxVuXl4)**
 
-The song is not ours: see [Credits](#credits) for who wrote and made it.
+**Original English video:** [Watch on YouTube](https://www.youtube.com/watch?v=5EoO5413dBY)
 
-The concept, style bible and plate-by-plate treatment are in [`docs/TREATMENT.md`](docs/TREATMENT.md). The engine and scene API are documented in [`docs/ENGINE.md`](docs/ENGINE.md).
+## About this edition
 
-## Layout
+- Arabic lyrics and on-screen text adapted for the video.
+- Word-synchronized animated typography and generative visuals.
+- Windows `.cmd` render launchers for multiple output qualities, up to 3840×2160 at 120 FPS.
+- Source code, timing data, assets, and local preview workflow.
 
-- `audio/pdoom.mp3` — the song (the Claude-Pop version, see Credits).
-- `lyrics/lyrics.src.js` — the original line-level lyrics (approximate timings).
-- `analysis/` — Python (uv) tools that produced the timing data: Demucs stem separation, CTC forced alignment cross-checked with Whisper, beat/downbeat/onset analysis. See `analysis/align.py` and `analysis/analyze.py`.
-- `data/lyrics.json` — word-level (and some syllable-level) lyric timings.
-- `data/audio.json` — tempo (132.007 BPM), beats, downbeats, sections, drum/vocal onsets and loudness envelopes.
-- `app/` — the renderer: TypeScript + three.js, bun + Vite.
-  - `src/engine/` — renderer core: timeline playback, post-processing (bloom, halation, grain), typography (Archivo, IBM Plex Mono, Cormorant Garamond, single-stroke plotter fonts), GPU line batches, HUD.
-  - `src/scenes/` — one module per plate (`open`, `loss`, `prompt`, `hook`, `room`, `shoggoth`, `spacetime`, `ascent`, `bureau`, `leftturn`, `paperclips`, `fuse`, `stack`, `dense`, `loom`, `ilya`, `outro`) plus shared motifs.
-  - `src/timeline.ts` — the edit: scene windows anchored to lyric lines and snapped to the beat grid.
-  - `scripts/render.ts` — offline renderer (headless Chrome → raw frames over WebSocket → ffmpeg).
-- `out/` — renders (not in the repo).
+> This is an unofficial Arabic adaptation. The original video, its underlying creative direction, and its engine were created by the original project's author and contributors. This repository does not claim ownership of their work or of the song.
+
+## Project layout
+
+- `audio/pdoom.mp3` — soundtrack (rights belong to the respective creators).
+- `lyrics/` — original lyric source material.
+- `data/` — audio analysis and lyric timing data, including Arabic adaptation data.
+- `analysis/` — Python tools for alignment and audio analysis.
+- `app/` — TypeScript / three.js video renderer.
+- `app/src/engine/` — renderer core, typography, effects, and playback.
+- `app/src/scenes/` — individual animated scenes.
+- `app/src/timeline.ts` — scene timing and editing.
+- `docs/` — technical documentation and treatment.
+- `RENDER-ARABIC-*.cmd` — Windows rendering scripts for different resolutions and frame rates.
+- `out/` — local rendered videos (not intended to be committed).
 
 ## Requirements
 
-[bun](https://bun.sh), Google Chrome (the offline renderer drives it headless through playwright-core) and ffmpeg with libx264. The analysis tools need [uv](https://docs.astral.sh/uv/); the renderer doesn't.
+- [Bun](https://bun.sh/)
+- Google Chrome
+- FFmpeg with `libx264` support
+- [uv](https://docs.astral.sh/uv/) — only needed to regenerate audio analysis and alignment data
 
-## Preview
+## Preview the video
+
+From the repository root:
 
 ```sh
 cd app
@@ -38,63 +50,51 @@ bun install
 bunx vite
 ```
 
-Open http://localhost:5173 and use the keys below. `?t=23` starts at a given time.
+Then open **http://localhost:5173**.
 
 | Key | Action |
-|---|---|
-| space | play / pause |
-| ← / → | seek ±1 s (±5 s with shift) |
-| `,` / `.` | step one frame |
-| `[` / `]` | previous / next scene |
-| `l` | loop the current scene |
-| `h` | hide the UI |
+| --- | --- |
+| Space | Play / pause |
+| Left / Right | Seek ±1 second (±5 seconds with Shift) |
+| `,` / `.` | Step one frame |
+| `[` / `]` | Previous / next scene |
+| `l` | Loop the current scene |
+| `h` | Hide the UI |
 
-The preview renders in real time on a recent Mac. The export is not real time and is heavier.
+## Render the Arabic Edition on Windows
 
-## Render the video
+Use one of the included `RENDER-ARABIC-*.cmd` scripts in the repository root. For example:
 
-```sh
-cd app
-bun scripts/render.ts video --samples auto --shutter 0.2 --out ../out/pdoom.mp4
+```cmd
+RENDER-ARABIC-1080-60.cmd
+RENDER-ARABIC-4K-120.cmd
 ```
 
-- **Output:** 1920×1080 at 60 fps, x264 CRF 16, AAC audio.
-- **Motion blur:** every frame is the average of many sub-frames spread over a short shutter (`--shutter 0.2`, a fifth of the frame time), so fast motion leaves a continuous streak instead of a few stepped copies. `--samples auto` picks the count for each 32×32 tile of the frame: 12 where the image is still, 36 for ordinary camera motion, 108 or 324 for whips, slams and fast zooms. A tile stops once more sub-frames would no longer change it by more than `--tol` levels of 255 (default 3), and later sub-frames skip it, so a fast object over a still background costs little more than the object. `--refine frame` picks one count for the whole frame instead (slower, the sampler before tiles). `--samples N` takes a fixed N (`--samples 4` makes a quick draft). How it works: "Motion blur and sampling" in [`docs/ENGINE.md`](docs/ENGINE.md).
-- **Pipeline:** two headless Chromes (`--workers 2`) render chunks of 8 frames (`--chunk`) in turn and stream them to one ffmpeg, which gets them in order: the file is the same as from one renderer. One renderer already keeps the GPU busy in the heavy scenes; the second fills the gaps in the light ones. Frames that wait for the encoder are buffered in memory up to `--mem-gb` (default 1) and then on disk up to `--spool-gb` (default 20, in the system temp folder), so the renderers don't wait for x264 in the light scenes and x264 catches up in the heavy ones.
-- **Other modes:** `stills`, `sheet` (contact sheets, `--cuts` for every scene boundary), `perf`, and `plates` (regenerates `public/plates/`, the stills used by the outro's rewind montage; rerun it after changing a scene).
+The 4K / 120 FPS option is computationally demanding. Rendered videos are normally written to the project's output directory. See the scripts for exact settings and filenames.
 
-### 4K
+## Original project and credits
 
-```sh
-cd app
-bun scripts/render.ts video --scale 2 --samples auto --shutter 0.2 --x264 aq-mode=3:rc-lookahead=30 --out ../out/pdoom-4k.mp4
-```
+**Original video and code project:** **[mexicat / pdoom-video](https://github.com/mexicat/pdoom-video)**. The original concept, treatment, audio/lyric analysis, video engine, animated scenes, and rendering workflow were developed by the original author with **Claude (Opus 5.5) in Claude Code**, as described in the original README.
 
-- **Output:** a true 3840×2160 render (not an upscale): every layer, line and shader is rendered at the physical resolution. Scenes are laid out in 1920×1080 logical pixels, so the 4K frame looks like the 1080p one, only sharper.
-- **Cost:** GPU-bound. A frame takes from about 40 ms (a still frame) to several seconds (the ray-marched rooms at 108–324 sub-frames). The whole song takes about 57 minutes on an M5 Pro. Memory peaks at about 23 GB: up to 6 GB for each headless Chrome, and ffmpeg at about 3.5 GB for most of the render (the shorter x264 lookahead above keeps it down) but up to 10 GB near the end.
-- **Encoding:** the film grain is rendered per 4K pixel, which is expensive to encode: at the default CRF 16 the file runs at about 670 Mbit/s (13 GB for the song, 8× the 1080p file), `--crf 18` gives about 450 Mbit/s and `--crf 20` about 230 Mbit/s.
-- `--scale 2` works with every mode. `stills` then saves full-resolution PNGs, and `perf` measures 4K frame times. In the browser preview, add `&scale=2` to the URL.
+**Original English video:** https://www.youtube.com/watch?v=5EoO5413dBY
 
-## Regenerate the timing data
+**Arabic edition:** [Zo7al](https://github.com/iiZo7al) — Arabic adaptation and edition. [Arabic video on YouTube](https://youtu.be/PMNwbxVuXl4).
 
-The committed `data/*.json` files are all the renderer needs. Regenerating them needs the stems and intermediates, which are not in the repo:
+### Music credits
 
-- **Stems:** Demucs `htdemucs_ft` into `analysis/stems/htdemucs_ft/pdoom/` (`uv run python -m demucs -n htdemucs_ft -o stems ../audio/pdoom.mp3`), plus the lead vocal from a mel-band-roformer karaoke model (audio-separator) in `analysis/stems/karaoke/lead.wav`.
-- **Intermediates:** `ctc_emissions.py`, `whisper_run.py` and `vocal_feats.py` write them to `analysis/work/`. The pipeline is described at the top of `analysis/align.py`.
+- **Song:** “I'm Upping My P(doom)” — not owned by this repository or the original video project.
+- **Lyrics:** [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), building on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with suggestions from the EleutherAI Discord and assistance from Claude on the outro and final chorus.
+- **Original song:** Generated with Udio and released in November 2024. [Listen](https://www.youtube.com/watch?v=uEB5E67vcPA).
+- **Version used for the video:** The “Claude-Pop” version made with Suno, shared by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
 
-```sh
-cd analysis
-uv run python align.py      # data/lyrics.json
-uv run python analyze.py    # data/audio.json
-```
+### Fonts
 
-The models download about 4 GB of weights into `analysis/.cache/`; delete that folder afterwards.
+Archivo, IBM Plex Mono, and Cormorant Garamond are licensed under the SIL Open Font License. EMS and Hershey single-stroke fonts are provided under their respective OFL / public-domain terms. See the font license files in `app/public/fonts/`.
 
-## Credits
+## License and attribution
 
-- **Song:** "I'm Upping My P(doom)". The lyrics are by [osmarks](https://docs.osmarks.net/hypha/p%28doom%29_song_objectively_correct_interpretation), built on an opening verse and chorus by [MusicPerson](https://www.udio.com/creators/MusicPerson), with lines suggested on the EleutherAI Discord and help from Claude on the outro and final chorus. The original was generated with Udio and released in November 2024 ([YouTube](https://www.youtube.com/watch?v=uEB5E67vcPA)). This video uses the "Claude-Pop" version made with Suno, posted by [deckard (@slimer48484)](https://x.com/slimer48484/status/2097752569212756134) in September 2026.
-- **Fonts:** Archivo, IBM Plex Mono and Cormorant Garamond (SIL Open Font License). Single-stroke EMS and Hershey fonts via the `hersheytext` package (OFL / public domain).
+The original project's **code** is released under the [MIT License](LICENSE). Keep its original copyright and permission notices intact when redistributing or modifying the code.
 
-## License
+**The MIT license does not grant ownership of the music, lyrics, or separately licensed fonts.** The soundtrack (`audio/`), original lyrics (`lyrics/`, `data/lyrics.json`), and fonts remain subject to their respective owners' rights and licenses. The Arabic adaptation does not replace or cancel those rights.
 
-The code is released under the [MIT License](LICENSE). The fonts in `app/public/fonts/` keep their own licenses (see Credits), and the song and lyrics (`audio/`, `lyrics/`, `data/lyrics.json`) are not covered by it: they belong to their authors (see Credits).
+Please credit **[mexicat/pdoom-video](https://github.com/mexicat/pdoom-video)** when sharing or adapting this project.
