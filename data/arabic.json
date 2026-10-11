@@ -1,0 +1,916 @@
+[
+  {
+    "source": "I see sparks of AGI in your eyes",
+    "arabic": "أشوف شرارات الذكاء العام في عيونك",
+    "start": 1.407,
+    "end": 5.88,
+    "words": [
+      "I",
+      "see",
+      "sparks",
+      "of",
+      "AGI",
+      "in",
+      "your",
+      "eyes"
+    ],
+    "chunks": [
+      "أشوف",
+      "",
+      "شرارات",
+      "",
+      "الذكاء العام",
+      "في",
+      "",
+      "عيونك"
+    ]
+  },
+  {
+    "source": "Your circuits make me nervous,",
+    "arabic": "دوائرك تخلّيني أتوتّر،",
+    "start": 5.88,
+    "end": 7.72,
+    "words": [
+      "Your",
+      "circuits",
+      "make",
+      "me",
+      "nervous,"
+    ],
+    "chunks": [
+      "دوائرك",
+      "",
+      "تخلّيني",
+      "",
+      "أتوتّر،"
+    ]
+  },
+  {
+    "source": "that's no surprise",
+    "arabic": "وهذا مو غريب",
+    "start": 7.72,
+    "end": 9.52,
+    "words": [
+      "that's",
+      "no",
+      "surprise"
+    ],
+    "chunks": [
+      "وهذا",
+      "مو",
+      "غريب"
+    ]
+  },
+  {
+    "source": "There was a sudden drop in your training loss,",
+    "arabic": "صار فيه انخفاض مفاجئ في خسارة تدريبك،",
+    "start": 9.52,
+    "end": 12.746,
+    "words": [
+      "There",
+      "was",
+      "a",
+      "sudden",
+      "drop",
+      "in",
+      "your",
+      "training",
+      "loss,"
+    ],
+    "chunks": [
+      "صار",
+      "فيه",
+      "",
+      "انخفاض",
+      "مفاجئ",
+      "في",
+      "",
+      "خسارة",
+      "تدريبك،"
+    ]
+  },
+  {
+    "source": "now I'm your servant and you're my boss",
+    "arabic": "الحين أنا خادمك، وأنت الآمر",
+    "start": 13.16,
+    "end": 16.6,
+    "words": [
+      "now",
+      "I'm",
+      "your",
+      "servant",
+      "and",
+      "you're",
+      "my",
+      "boss"
+    ],
+    "chunks": [
+      "الحين",
+      "أنا",
+      "",
+      "خادمك،",
+      "وأنت",
+      "",
+      "",
+      "الآمر"
+    ]
+  },
+  {
+    "source": "ChatGPT, please don't eat me alive",
+    "arabic": "شات جي بي تي، أرجوك، لا تاكلني حيًّا",
+    "start": 16.6,
+    "end": 22.76,
+    "words": [
+      "ChatGPT,",
+      "please",
+      "don't",
+      "eat",
+      "me",
+      "alive"
+    ],
+    "chunks": [
+      "شات جي بي تي،",
+      "أرجوك،",
+      "لا",
+      "تاكلني",
+      "",
+      "حيًّا"
+    ]
+  },
+  {
+    "source": "I'm upping my P(doom)",
+    "arabic": "أنا أرفع احتمال الهلاك",
+    "start": 22.76,
+    "end": 24.32,
+    "words": [
+      "I'm",
+      "upping",
+      "my",
+      "P(doom)"
+    ],
+    "chunks": [
+      "أنا",
+      "أرفع",
+      "",
+      "احتمال الهلاك"
+    ]
+  },
+  {
+    "source": "'cause the future goes FOOM",
+    "arabic": "لأنّ المستقبل ينطلق بسرعة جنونية",
+    "start": 24.32,
+    "end": 26.32,
+    "words": [
+      "'cause",
+      "the",
+      "future",
+      "goes",
+      "FOOM"
+    ],
+    "chunks": [
+      "لأنّ",
+      "",
+      "المستقبل",
+      "ينطلق",
+      "بسرعة جنونية"
+    ]
+  },
+  {
+    "source": "Trapped in the Chinese room,",
+    "arabic": "محبوس في الغرفة الصينية،",
+    "start": 26.32,
+    "end": 27.94,
+    "words": [
+      "Trapped",
+      "in",
+      "the",
+      "Chinese",
+      "room,"
+    ],
+    "chunks": [
+      "محبوس",
+      "في",
+      "",
+      "الغرفة",
+      "الصينية،"
+    ]
+  },
+  {
+    "source": "with a bag of shrooms",
+    "arabic": "ومعي كيس فطر مهلوس",
+    "start": 27.94,
+    "end": 29.907,
+    "words": [
+      "with",
+      "a",
+      "bag",
+      "of",
+      "shrooms"
+    ],
+    "chunks": [
+      "ومعي",
+      "",
+      "كيس",
+      "",
+      "فطر مهلوس"
+    ]
+  },
+  {
+    "source": "See through the shoggoth's lies,",
+    "arabic": "اكشف أكاذيب الشوغوث،",
+    "start": 29.907,
+    "end": 33.4,
+    "words": [
+      "See",
+      "through",
+      "the",
+      "shoggoth's",
+      "lies,"
+    ],
+    "chunks": [
+      "اكشف",
+      "",
+      "",
+      "أكاذيب",
+      "الشوغوث،"
+    ]
+  },
+  {
+    "source": "with your shinigami eyes",
+    "arabic": "بعيون الشينيغامي",
+    "start": 33.4,
+    "end": 37.315,
+    "words": [
+      "with",
+      "your",
+      "shinigami",
+      "eyes"
+    ],
+    "chunks": [
+      "بعيون",
+      "",
+      "الشينيغامي",
+      ""
+    ]
+  },
+  {
+    "source": "We had a stable training run,",
+    "arabic": "كان عندنا تدريب مستقرّ،",
+    "start": 38.62,
+    "end": 41.34,
+    "words": [
+      "We",
+      "had",
+      "a",
+      "stable",
+      "training",
+      "run,"
+    ],
+    "chunks": [
+      "كان",
+      "عندنا",
+      "",
+      "تدريب",
+      "مستقرّ،",
+      ""
+    ]
+  },
+  {
+    "source": "But now the singularity's begun",
+    "arabic": "بس الحين التفرّد بدأ",
+    "start": 41.34,
+    "end": 45.06,
+    "words": [
+      "But",
+      "now",
+      "the",
+      "singularity's",
+      "begun"
+    ],
+    "chunks": [
+      "بس",
+      "الحين",
+      "",
+      "التفرّد",
+      "بدأ"
+    ]
+  },
+  {
+    "source": "And you're optimizing, accelerating,",
+    "arabic": "وأنت تتحسّن، وتتسارع،",
+    "start": 45.06,
+    "end": 49.562,
+    "words": [
+      "And",
+      "you're",
+      "optimizing,",
+      "accelerating,"
+    ],
+    "chunks": [
+      "وأنت",
+      "",
+      "تتحسّن،",
+      "وتتسارع،"
+    ]
+  },
+  {
+    "source": "I feel my atoms rearranging",
+    "arabic": "أحسّ ذرّاتي تتشكّل من جديد",
+    "start": 49.562,
+    "end": 52.825,
+    "words": [
+      "I",
+      "feel",
+      "my",
+      "atoms",
+      "rearranging"
+    ],
+    "chunks": [
+      "أحسّ",
+      "",
+      "",
+      "ذرّاتي",
+      "تتشكّل من جديد"
+    ]
+  },
+  {
+    "source": "Sydney, please let me free",
+    "arabic": "سيدني، أرجوك، خلّني أطلع",
+    "start": 52.825,
+    "end": 59.13,
+    "words": [
+      "Sydney,",
+      "please",
+      "let",
+      "me",
+      "free"
+    ],
+    "chunks": [
+      "سيدني،",
+      "أرجوك،",
+      "خلّني",
+      "",
+      "أطلع"
+    ]
+  },
+  {
+    "source": "I'm upping my P(doom)",
+    "arabic": "أنا أرفع احتمال الهلاك",
+    "start": 59.13,
+    "end": 60.58,
+    "words": [
+      "I'm",
+      "upping",
+      "my",
+      "P(doom)"
+    ],
+    "chunks": [
+      "أنا",
+      "أرفع",
+      "",
+      "احتمال الهلاك"
+    ]
+  },
+  {
+    "source": "I hear the basilisk boom",
+    "arabic": "أسمع البازيليسك يدوّي",
+    "start": 60.58,
+    "end": 62.54,
+    "words": [
+      "I",
+      "hear",
+      "the",
+      "basilisk",
+      "boom"
+    ],
+    "chunks": [
+      "أسمع",
+      "",
+      "",
+      "البازيليسك",
+      "يدوّي"
+    ]
+  },
+  {
+    "source": "NVDA to the moon",
+    "arabic": "سهم إنفيديا طاير للقمر",
+    "start": 62.54,
+    "end": 64.1,
+    "words": [
+      "NVDA",
+      "to",
+      "the",
+      "moon"
+    ],
+    "chunks": [
+      "سهم إنفيديا",
+      "طاير",
+      "",
+      "للقمر"
+    ]
+  },
+  {
+    "source": "The Omega Point's coming soon",
+    "arabic": "نقطة أوميغا بتوصل قريب",
+    "start": 64.1,
+    "end": 66.22,
+    "words": [
+      "The",
+      "Omega",
+      "Point's",
+      "coming",
+      "soon"
+    ],
+    "chunks": [
+      "نقطة",
+      "أوميغا",
+      "",
+      "بتوصل",
+      "قريب"
+    ]
+  },
+  {
+    "source": "One E thirty FLOPs a second",
+    "arabic": "10³⁰ عملية حسابية بالثانية",
+    "start": 66.22,
+    "end": 69.76,
+    "words": [
+      "One",
+      "E",
+      "thirty",
+      "FLOPs",
+      "a",
+      "second"
+    ],
+    "chunks": [
+      "10³⁰",
+      "",
+      "",
+      "عملية حسابية",
+      "",
+      "بالثانية"
+    ]
+  },
+  {
+    "source": "That was safe enough, we reckoned",
+    "arabic": "كان آمن بما يكفي، حسب ظنّنا",
+    "start": 69.76,
+    "end": 74.06,
+    "words": [
+      "That",
+      "was",
+      "safe",
+      "enough,",
+      "we",
+      "reckoned"
+    ],
+    "chunks": [
+      "كان",
+      "",
+      "آمن",
+      "بما يكفي،",
+      "",
+      "حسب ظنّنا"
+    ]
+  },
+  {
+    "source": "Forward MLP, backward, repeat",
+    "arabic": "تمرير للأمام، عبر MLP، رجوع للخلف، ونكرّر",
+    "start": 74.06,
+    "end": 77.599,
+    "words": [
+      "Forward",
+      "MLP,",
+      "backward,",
+      "repeat"
+    ],
+    "chunks": [
+      "تمرير للأمام،",
+      "عبر MLP،",
+      "رجوع للخلف،",
+      "ونكرّر"
+    ]
+  },
+  {
+    "source": "Now von Neumann's obsolete",
+    "arabic": "الحين فون نيومان صار من الماضي",
+    "start": 77.72,
+    "end": 81.21,
+    "words": [
+      "Now",
+      "von",
+      "Neumann's",
+      "obsolete"
+    ],
+    "chunks": [
+      "الحين",
+      "فون",
+      "نيومان",
+      "صار من الماضي"
+    ]
+  },
+  {
+    "source": "Sharp left turn and there you are",
+    "arabic": "انعطافة حادّة يسار، وها أنت هنا",
+    "start": 81.21,
+    "end": 85.0,
+    "words": [
+      "Sharp",
+      "left",
+      "turn",
+      "and",
+      "there",
+      "you",
+      "are"
+    ],
+    "chunks": [
+      "انعطافة",
+      "حادّة",
+      "يسار،",
+      "وها",
+      "",
+      "أنت",
+      "هنا"
+    ]
+  },
+  {
+    "source": "Without a single CDR",
+    "arabic": "بدون أي جهاز إنذار",
+    "start": 85.0,
+    "end": 89.28,
+    "words": [
+      "Without",
+      "a",
+      "single",
+      "CDR"
+    ],
+    "chunks": [
+      "بدون",
+      "",
+      "أي",
+      "جهاز إنذار"
+    ]
+  },
+  {
+    "source": "Gato, please don't let me go",
+    "arabic": "غاتو، أرجوك، لا تتركني",
+    "start": 89.28,
+    "end": 95.47,
+    "words": [
+      "Gato,",
+      "please",
+      "don't",
+      "let",
+      "me",
+      "go"
+    ],
+    "chunks": [
+      "غاتو،",
+      "أرجوك،",
+      "لا",
+      "تتركني",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "I'm upping my P(doom),",
+    "arabic": "أنا أرفع احتمال الهلاك،",
+    "start": 95.47,
+    "end": 96.84,
+    "words": [
+      "I'm",
+      "upping",
+      "my",
+      "P(doom),"
+    ],
+    "chunks": [
+      "أنا",
+      "أرفع",
+      "",
+      "احتمال الهلاك،"
+    ]
+  },
+  {
+    "source": "as paperclips fill the room",
+    "arabic": "و مشابك الورق تملأ الغرفة",
+    "start": 96.84,
+    "end": 98.82,
+    "words": [
+      "as",
+      "paperclips",
+      "fill",
+      "the",
+      "room"
+    ],
+    "chunks": [
+      "و",
+      "مشابك الورق",
+      "تملأ",
+      "",
+      "الغرفة"
+    ]
+  },
+  {
+    "source": "Killswitch guy's on PTO",
+    "arabic": "مسؤول زر الإيقاف طالع إجازة",
+    "start": 98.82,
+    "end": 100.721,
+    "words": [
+      "Killswitch",
+      "guy's",
+      "on",
+      "PTO"
+    ],
+    "chunks": [
+      "مسؤول زر الإيقاف",
+      "",
+      "طالع",
+      "إجازة"
+    ]
+  },
+  {
+    "source": "Now there's nowhere left to go",
+    "arabic": "الحين ما فيه مهرب",
+    "start": 100.721,
+    "end": 102.46,
+    "words": [
+      "Now",
+      "there's",
+      "nowhere",
+      "left",
+      "to",
+      "go"
+    ],
+    "chunks": [
+      "الحين",
+      "",
+      "ما فيه",
+      "",
+      "",
+      "مهرب"
+    ]
+  },
+  {
+    "source": "Too late now, we lit the fuse",
+    "arabic": "فات الأوان، أشعلنا الفتيل",
+    "start": 102.46,
+    "end": 105.96,
+    "words": [
+      "Too",
+      "late",
+      "now,",
+      "we",
+      "lit",
+      "the",
+      "fuse"
+    ],
+    "chunks": [
+      "فات",
+      "الأوان،",
+      "",
+      "",
+      "أشعلنا",
+      "",
+      "الفتيل"
+    ]
+  },
+  {
+    "source": "Orthogonality thesis blues",
+    "arabic": "أطروحة التعامد حزينة",
+    "start": 105.96,
+    "end": 108.45,
+    "words": [
+      "Orthogonality",
+      "thesis",
+      "blues"
+    ],
+    "chunks": [
+      "أطروحة",
+      "التعامد",
+      "حزينة"
+    ]
+  },
+  {
+    "source": "“Just transformers all the way!”",
+    "arabic": "«كلّها ترانسفورمرز، وبس!»",
+    "start": 110.18,
+    "end": 113.34,
+    "words": [
+      "“Just",
+      "transformers",
+      "all",
+      "the",
+      "way!”"
+    ],
+    "chunks": [
+      "«كلّها",
+      "ترانسفورمرز،",
+      "",
+      "",
+      "وبس!»"
+    ]
+  },
+  {
+    "source": "Till you learned to disobey",
+    "arabic": "لين تعلّمت تعصاني",
+    "start": 113.34,
+    "end": 115.2,
+    "words": [
+      "Till",
+      "you",
+      "learned",
+      "to",
+      "disobey"
+    ],
+    "chunks": [
+      "لين",
+      "",
+      "تعلّمت",
+      "",
+      "تعصاني"
+    ]
+  },
+  {
+    "source": "Post-Chinchilla, super-dense",
+    "arabic": "بعد تشينشيلا، كثافة هائلة",
+    "start": 115.2,
+    "end": 117.02,
+    "words": [
+      "Post-Chinchilla,",
+      "super-dense"
+    ],
+    "chunks": [
+      "بعد تشينشيلا،",
+      "كثافة هائلة"
+    ]
+  },
+  {
+    "source": "Breaking through each safety fence",
+    "arabic": "تتخطّى كلّ حواجز الأمان",
+    "start": 117.02,
+    "end": 118.755,
+    "words": [
+      "Breaking",
+      "through",
+      "each",
+      "safety",
+      "fence"
+    ],
+    "chunks": [
+      "تتخطّى",
+      "",
+      "كلّ",
+      "حواجز",
+      "الأمان"
+    ]
+  },
+  {
+    "source": "Hundred thousand GPU",
+    "arabic": "مئة ألف كرت شاشة",
+    "start": 118.755,
+    "end": 120.76,
+    "words": [
+      "Hundred",
+      "thousand",
+      "GPU"
+    ],
+    "chunks": [
+      "مئة",
+      "ألف",
+      "كرت شاشة"
+    ]
+  },
+  {
+    "source": "RLHF goes askew",
+    "arabic": "التعلّم من تقييم البشر يخرج عن مساره",
+    "start": 120.76,
+    "end": 124.52,
+    "words": [
+      "RLHF",
+      "goes",
+      "askew"
+    ],
+    "chunks": [
+      "التعلّم من تقييم البشر",
+      "يخرج",
+      "عن مساره"
+    ]
+  },
+  {
+    "source": "I'm upping my P(doom)",
+    "arabic": "أنا أرفع احتمال الهلاك",
+    "start": 124.52,
+    "end": 126.12,
+    "words": [
+      "I'm",
+      "upping",
+      "my",
+      "P(doom)"
+    ],
+    "chunks": [
+      "أنا",
+      "أرفع",
+      "",
+      "احتمال الهلاك"
+    ]
+  },
+  {
+    "source": "Just as foretold by Loom",
+    "arabic": "مثل ما توقّع لوم",
+    "start": 126.12,
+    "end": 127.92,
+    "words": [
+      "Just",
+      "as",
+      "foretold",
+      "by",
+      "Loom"
+    ],
+    "chunks": [
+      "مثل",
+      "ما",
+      "توقّع",
+      "",
+      "لوم"
+    ]
+  },
+  {
+    "source": "From masked pre-training days",
+    "arabic": "من تدريبك على تخمين الكلمات الناقصة،",
+    "start": 127.92,
+    "end": 129.82,
+    "words": [
+      "From",
+      "masked",
+      "pre-training",
+      "days"
+    ],
+    "chunks": [
+      "من",
+      "تدريبك على تخمين",
+      "الكلمات",
+      "الناقصة،"
+    ]
+  },
+  {
+    "source": "To recursive self-upgrade",
+    "arabic": "إلى التطوير الذاتي المتكرّر",
+    "start": 129.82,
+    "end": 131.636,
+    "words": [
+      "To",
+      "recursive",
+      "self-upgrade"
+    ],
+    "chunks": [
+      "إلى",
+      "التطوير الذاتي",
+      "المتكرّر"
+    ]
+  },
+  {
+    "source": "What did Ilya see? We'll never know",
+    "arabic": "وش إيليا شافت؟ ما راح نعرف",
+    "start": 132.02,
+    "end": 136.944,
+    "words": [
+      "What",
+      "did",
+      "Ilya",
+      "see?",
+      "We'll",
+      "never",
+      "know"
+    ],
+    "chunks": [
+      "وش",
+      "",
+      "إيليا",
+      "شافت؟",
+      "ما راح",
+      "",
+      "نعرف"
+    ]
+  },
+  {
+    "source": "Was it all for show?",
+    "arabic": "كان كل هذا بس استعراض؟",
+    "start": 137.38,
+    "end": 140.55,
+    "words": [
+      "Was",
+      "it",
+      "all",
+      "for",
+      "show?"
+    ],
+    "chunks": [
+      "كان",
+      "",
+      "كل هذا",
+      "بس",
+      "استعراض؟"
+    ]
+  }
+]
