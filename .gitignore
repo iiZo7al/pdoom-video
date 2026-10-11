@@ -12,3 +12,7 @@ analysis/__pycache__/
 analysis/stems/
 analysis/work/
 analysis/qa/
+node_modules/
+out/
+.env
+.env.*
